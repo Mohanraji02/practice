@@ -21,7 +21,7 @@ public class startbrowser {
 		
 		else if(browser.equalsIgnoreCase("chrome"))
 		{
-			System.setProperty("webdriver.gecko.driver", "C:\\Users\\Mohan raji\\Desktop\\chromedriver.exe");
+			System.setProperty("webdriver.chrome.driver", "C:\\Users\\Mohan raji\\Desktop\\chromedriver.exe");
 			 driver=new ChromeDriver();
 			driver.get(url);
 		}
