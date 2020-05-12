@@ -1,6 +1,7 @@
 package crossbrowser;
 
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class startbrowser {
@@ -20,9 +21,9 @@ public class startbrowser {
 		
 		else if(browser.equalsIgnoreCase("chrome"))
 		{
-			System.setProperty("webdriver.gecko.driver", " ");
-			 driver=new FirefoxDriver();
-			
+			System.setProperty("webdriver.gecko.driver", "C:\\Users\\Mohan raji\\Desktop\\chromedriver.exe");
+			 driver=new ChromeDriver();
+			driver.get(url);
 		}
 	return driver;
 	}
